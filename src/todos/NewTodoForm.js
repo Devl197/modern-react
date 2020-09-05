@@ -10,7 +10,7 @@ const NewTodoForm = ({ todos, onCreatePressed }) => {
             <input type="text" className="new-todo-input" 
             placeholder="Type your new todo here"
             value={inputValue}
-            onChange={e => setInputValue(e.input.value)}
+            onChange={e => setInputValue(e.target.value)}
             />
             <button 
                 onClick={() => {
